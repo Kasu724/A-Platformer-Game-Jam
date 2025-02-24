@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3rnqpyc7bcyk"]
+
+[ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="1_4gk47"]
+[ext_resource type="Script" path="res://scripts/SpikeUp.gd" id="1_g8j7x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_folm5"]
+size = Vector2(12, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a1mnr"]
+size = Vector2(16, 16)
+
+[node name="SpikeUp" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_g8j7x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4gk47")
+region_enabled = true
+region_rect = Rect2(272, 80, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.5)
+shape = SubResource("RectangleShape2D_folm5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_a1mnr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://7ddbbovsblxr"]
+
+[ext_resource type="Script" path="res://scripts/Crate.gd" id="1_0okus"]
+[ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="2_d0u2j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ydu0x"]
+size = Vector2(16, 15.9)
+
+[node name="CrateStone" type="CharacterBody2D" groups=["Movables"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_0okus")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_d0u2j")
+region_enabled = true
+region_rect = Rect2(48, 80, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.05)
+shape = SubResource("RectangleShape2D_ydu0x")
+
+[node name="PlayerBelowL" type="RayCast2D" parent="."]
+position = Vector2(-8, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="PlayerBelowM" type="RayCast2D" parent="."]
+position = Vector2(0, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="PlayerBelowR" type="RayCast2D" parent="."]
+position = Vector2(8, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="Left" type="RayCast2D" parent="." groups=["Movables"]]
+position = Vector2(-8, 0)
+target_position = Vector2(-5, 0)
+
+[node name="Right" type="RayCast2D" parent="." groups=["Movables"]]
+position = Vector2(8, 0)
+target_position = Vector2(5, 0)

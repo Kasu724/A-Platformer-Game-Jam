@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://sdwhxwgst6y6"]
+
+[ext_resource type="Script" path="res://scripts/Key.gd" id="1_hyxh2"]
+[ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="2_76kkx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ydu0x"]
+size = Vector2(12, 15.9)
+
+[node name="GoldKey" type="CharacterBody2D" groups=["Movables"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_hyxh2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_76kkx")
+region_enabled = true
+region_rect = Rect2(192, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.05)
+shape = SubResource("RectangleShape2D_ydu0x")
+
+[node name="PlayerBelowL" type="RayCast2D" parent="."]
+position = Vector2(-6, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="PlayerBelowM" type="RayCast2D" parent="."]
+position = Vector2(0, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="PlayerBelowR" type="RayCast2D" parent="."]
+position = Vector2(6, 8)
+target_position = Vector2(0, 1)
+collision_mask = 5
+
+[node name="Left" type="RayCast2D" parent="." groups=["Movables"]]
+position = Vector2(-6, 0)
+target_position = Vector2(-5, 0)
+
+[node name="Right" type="RayCast2D" parent="." groups=["Movables"]]
+position = Vector2(6, 0)
+target_position = Vector2(5, 0)

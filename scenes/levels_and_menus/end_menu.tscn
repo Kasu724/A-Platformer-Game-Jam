@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://df3k03jfvx70b"]
+
+[ext_resource type="Texture2D" uid="uid://cy6drvkjj5v8y" path="res://assets/aseprite/Background.png" id="1_83pr8"]
+[ext_resource type="FontFile" uid="uid://cmemt8tefr5xd" path="res://assets/fonts/NicoClean-Regular.ttf" id="2_kw5xq"]
+[ext_resource type="Theme" uid="uid://djxvhndybhl4p" path="res://assets/themes/default_button.tres" id="3_7h7rq"]
+[ext_resource type="Script" path="res://scripts/Return.gd" id="4_bj881"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k3f7a"]
+texture = ExtResource("1_83pr8")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -768.0
+offset_bottom = -432.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_k3f7a")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 3.66667
+offset_right = 100.0
+offset_bottom = 70.6667
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_kw5xq")
+theme_override_font_sizes/font_size = 16
+text = "Thank you
+ for playing!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.5
+offset_top = 76.0
+offset_right = 150.5
+offset_bottom = 143.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_kw5xq")
+theme_override_font_sizes/font_size = 16
+text = "sorry this game is so short...
+i ran out of time...
+spent too much time on mechanics..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.5
+offset_top = 52.6667
+offset_right = 97.5
+offset_bottom = 97.6667
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_7h7rq")
+text = "Return to Main Menu"
+icon_alignment = 1
+script = ExtResource("4_bj881")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_pressed"]
