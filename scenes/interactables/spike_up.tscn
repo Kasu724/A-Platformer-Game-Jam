@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3rnqpyc7bcyk"]
 
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="1_4gk47"]
-[ext_resource type="Script" uid="uid://dorc0yjpygnph" path="res://scripts/SpikeUp.gd" id="1_g8j7x"]
+[ext_resource type="Script" path="res://scripts/SpikeUp.gd" id="1_g8j7x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_folm5"]
 size = Vector2(12, 9)

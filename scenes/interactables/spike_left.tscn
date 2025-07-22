@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://u8cvt6n7iknk"]
 
-[ext_resource type="Script" uid="uid://dorc0yjpygnph" path="res://scripts/SpikeUp.gd" id="1_5pulv"]
+[ext_resource type="Script" path="res://scripts/SpikeUp.gd" id="1_5pulv"]
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="2_658m3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_folm5"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b1fej4lafksw3"]
 
-[ext_resource type="Script" uid="uid://djviw8xw4nues" path="res://scripts/Buttons.gd" id="1_vir6u"]
+[ext_resource type="Script" path="res://scripts/Buttons.gd" id="1_vir6u"]
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="2_jbsl3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3icir"]
