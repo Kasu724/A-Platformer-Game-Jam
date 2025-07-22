@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=4 uid="uid://brox4mqoi7vim"]
 
-[ext_resource type="Script" path="res://scripts/Hub.gd" id="1_vdnar"]
+[ext_resource type="Script" uid="uid://c8dq8j16wednc" path="res://scripts/Hub.gd" id="1_vdnar"]
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="1_yj3i3"]
 [ext_resource type="PackedScene" uid="uid://bfpqbhsdijsr7" path="res://scenes/interactables/crate_wood.tscn" id="2_lq8yf"]
 [ext_resource type="PackedScene" uid="uid://sdwhxwgst6y6" path="res://scenes/interactables/gold_key.tscn" id="2_nahlb"]

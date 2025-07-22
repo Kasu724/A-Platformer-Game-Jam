@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://q5rbeuuftt7v"]
 
-[ext_resource type="Script" path="res://scripts/Retractable.gd" id="1_cvgre"]
+[ext_resource type="Script" uid="uid://bcrcg4ci60ure" path="res://scripts/Retractable.gd" id="1_cvgre"]
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="2_1ia3b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ay1y"]

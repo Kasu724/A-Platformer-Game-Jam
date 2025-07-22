@@ -1,12 +1,12 @@
 [gd_scene load_steps=50 format=3 uid="uid://ill6n2x30s5c"]
 
-[ext_resource type="Script" path="res://scripts/PlayerMovement.gd" id="1_jeys7"]
+[ext_resource type="Script" uid="uid://cs6qprwh4i1an" path="res://scripts/PlayerMovement.gd" id="1_jeys7"]
 [ext_resource type="Texture2D" uid="uid://cblbsmuh7yer1" path="res://assets/aseprite/Main Character.png" id="2_oe2hb"]
-[ext_resource type="Script" path="res://scripts/Carry.gd" id="3_tshck"]
-[ext_resource type="Script" path="res://scripts/BLJ.gd" id="4_cabbn"]
-[ext_resource type="Script" path="res://scripts/Duplicate.gd" id="5_jd1gr"]
-[ext_resource type="Script" path="res://scripts/WallClip.gd" id="6_detgd"]
-[ext_resource type="Script" path="res://scripts/Reset.gd" id="7_1w00y"]
+[ext_resource type="Script" uid="uid://68s6aw8cm8p5" path="res://scripts/Carry.gd" id="3_tshck"]
+[ext_resource type="Script" uid="uid://ov31dg0wgi25" path="res://scripts/BLJ.gd" id="4_cabbn"]
+[ext_resource type="Script" uid="uid://b0ylqvb7gu1yu" path="res://scripts/Duplicate.gd" id="5_jd1gr"]
+[ext_resource type="Script" uid="uid://8v0dggaplqjw" path="res://scripts/WallClip.gd" id="6_detgd"]
+[ext_resource type="Script" uid="uid://c41ujxfnsgcfw" path="res://scripts/Reset.gd" id="7_1w00y"]
 [ext_resource type="FontFile" uid="uid://v0pcvinnx7hi" path="res://assets/fonts/mago1.ttf" id="8_jbq3b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhyhh"]

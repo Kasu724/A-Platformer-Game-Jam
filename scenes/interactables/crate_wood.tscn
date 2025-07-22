@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfpqbhsdijsr7"]
 
 [ext_resource type="Texture2D" uid="uid://dmuxfvcitxjoq" path="res://assets/aseprite/Tileset.png" id="1_bo5gm"]
-[ext_resource type="Script" path="res://scripts/Crate.gd" id="1_xf4lv"]
+[ext_resource type="Script" uid="uid://r6ibpk6dc70g" path="res://scripts/Crate.gd" id="1_xf4lv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ydu0x"]
 size = Vector2(16, 15.9)
